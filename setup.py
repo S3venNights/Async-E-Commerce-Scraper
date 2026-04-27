@@ -1,3 +1,4 @@
+from asyncio import subprocess
 import os
 import subprocess
 import sys
@@ -51,6 +52,7 @@ def setup():
         print_step("Installing dependencies...")
         try:
             subprocess.check_call([str(pip_path), "install", "-r", str(req_file)])
+            subprocess.call("playwright install chromium")
             print_success("Dependencies installed.")
         except subprocess.CalledProcessError as e:
             print_error(f"Failed to install dependencies: {e}")
