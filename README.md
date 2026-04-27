@@ -15,6 +15,7 @@ Professional Logging: Color-coded console output and rotating file logs for prod
 ## Installation & Setup
 1. Clone the Repository
 git clone https://github.com/S3venNights/Async-E-Commerce-Scraper
+
 cd scraper-pro
 
 4. Setup Virtual Environment
