@@ -13,27 +13,23 @@ Smart Resource Management: Aborts unnecessary requests (images, fonts, media) to
 Professional Logging: Color-coded console output and rotating file logs for production-grade monitoring.
 
 ## Installation & Setup
-1. Clone the Repository
-Bash
-git clone https://github.com/S3venNights/Async-E-Commerce-Scraper
-cd scraper-pro
-2. Setup Virtual Environment
-Bash
-# Create environment
-python -m venv venv
+# Clone the Repository
 
-# Activate (Windows)
-.\venv\Scripts\activate
+    git clone https://github.com/S3venNights/Async-E-Commerce-Scraper
 
-# Activate (macOS/Linux)
-source venv/bin/activate
-3. Install Dependencies
-This project requires Playwright and its browser binaries.
+    cd scraper-pro
 
-Bash
-pip install -r requirements.txt
-playwright install chromium
-⚙️ Configuration
+# Setup Virtual Environment
+## Create environment
+python setup.py 
+
+# Run
+## Linux/MacOS
+bash run.sh 
+## Windows 10/11
+soon
+
+## Configuration
 Before running, you can customize the behavior in config/settings.py:
 
 CONCURRENCY_LIMIT: Adjust based on your CPU/RAM (default is 10).
@@ -46,13 +42,7 @@ LIST_URL: The target category URL to scrape.
 Run the Full Scraper
 The engine will discover products via API and then scrape details using headless Chromium:
 
-Bash
 python src/main.py
-Run Regex Tests
-To validate extraction patterns for mileage, year, or prices:
-
-Bash
-python scratch/test_regex.py
 
 ## Project Structure
     Plaintext
