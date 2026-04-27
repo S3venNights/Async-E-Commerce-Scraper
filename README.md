@@ -13,19 +13,20 @@ Smart Resource Management: Aborts unnecessary requests (images, fonts, media) to
 Professional Logging: Color-coded console output and rotating file logs for production-grade monitoring.
 
 ## Installation & Setup
-1. Clone the Repository
-git clone https://github.com/S3venNights/Async-E-Commerce-Scraper
+# Clone the Repository
 
-cd scraper-pro
+    git clone https://github.com/S3venNights/Async-E-Commerce-Scraper
 
-4. Setup Virtual Environment
-# Create environment
+    cd scraper-pro
+
+# Setup Virtual Environment
+## Create environment
 python setup.py 
 
-## Run
-# Linux/MacOS
+# Run
+## Linux/MacOS
 bash run.sh 
-# Windows 10/11
+## Windows 10/11
 soon
 
 ## Configuration
