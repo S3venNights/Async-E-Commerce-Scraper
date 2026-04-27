@@ -15,7 +15,7 @@ Professional Logging: Color-coded console output and rotating file logs for prod
 ## Installation & Setup
 1. Clone the Repository
 Bash
-git clone https://github.com/your-username/scraper-pro.git
+git clone https://github.com/S3venNights/Async-E-Commerce-Scraper
 cd scraper-pro
 2. Setup Virtual Environment
 Bash
