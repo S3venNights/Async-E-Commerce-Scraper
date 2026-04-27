@@ -14,26 +14,20 @@ Professional Logging: Color-coded console output and rotating file logs for prod
 
 ## Installation & Setup
 1. Clone the Repository
-Bash
 git clone https://github.com/S3venNights/Async-E-Commerce-Scraper
 cd scraper-pro
-2. Setup Virtual Environment
-Bash
+
+4. Setup Virtual Environment
 # Create environment
-python -m venv venv
+python setup.py 
 
-# Activate (Windows)
-.\venv\Scripts\activate
+## Run
+# Linux/MacOS
+bash run.sh 
+# Windows 10/11
+soon
 
-# Activate (macOS/Linux)
-source venv/bin/activate
-3. Install Dependencies
-This project requires Playwright and its browser binaries.
-
-Bash
-pip install -r requirements.txt
-playwright install chromium
-⚙️ Configuration
+## Configuration
 Before running, you can customize the behavior in config/settings.py:
 
 CONCURRENCY_LIMIT: Adjust based on your CPU/RAM (default is 10).
@@ -46,13 +40,7 @@ LIST_URL: The target category URL to scrape.
 Run the Full Scraper
 The engine will discover products via API and then scrape details using headless Chromium:
 
-Bash
 python src/main.py
-Run Regex Tests
-To validate extraction patterns for mileage, year, or prices:
-
-Bash
-python scratch/test_regex.py
 
 ## Project Structure
     Plaintext
